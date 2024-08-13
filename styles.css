@@ -1,0 +1,107 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+    background-image: url('https://img.freepik.com/free-photo/cartoon-man-wearing-glasses_23-2151136839.jpg?t=st=1723565843~exp=1723569443~hmac=707f99089588a1819e4cca2e6b1261f6a506b4d585544442913fb37942a38505&w=996');
+    
+    background-size: cover;
+    
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.start-screen {
+    text-align: center;
+}
+
+.start-screen button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #61dafb;
+    transition: background-color 0.3s ease;
+}
+
+.start-screen button:hover {
+    background-color: #21a1f1;
+}
+
+.container {
+    text-align: center;
+    size-adjust: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.cell {
+    background-color: #61dafb;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #21a1f1;
+}
+
+#reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset-btn:hover {
+    background-color: #21a1f1;
+}
+
+#message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
